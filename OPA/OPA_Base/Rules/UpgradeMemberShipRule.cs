@@ -13,8 +13,17 @@ namespace OPA.OPA_Base.Rules
 
         private string UpgradeMemberhip()
         {
-            //logic comes here
-            return "Member Upgraded Successfully";
+            try
+            {
+                //logic comes here
+                return "Member Upgraded Successfully";
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+           
         }
     }
 }

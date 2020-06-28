@@ -4,7 +4,7 @@ namespace OPA.OPA_Base.RuleExtension
 {
 
     /// <summary>
-    /// Extention method can be added as as require with exsisitng or new upcoming rules 
+    /// Extention method can be added as require with exsisitng or new upcoming rules 
     /// </summary>
    public static class OrderExtension
     {

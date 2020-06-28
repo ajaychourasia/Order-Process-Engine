@@ -13,8 +13,17 @@ namespace OPA.OPA_Base.Rules
 
         private string GenerateDuplicatePackagingSlip()
         {
-            //logic comes here
-            return "A Duplicate Packaging Slip for Royality department Generated sucessfully";
+            try
+            {
+                //logic comes here
+                return "A Duplicate Packaging Slip for Royality department Generated sucessfully";
+            }
+            catch (System.Exception)
+            {
+                //Log exception here
+                throw;
+            }
+            
         }
     }
 }

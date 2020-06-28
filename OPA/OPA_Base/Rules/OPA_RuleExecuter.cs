@@ -9,21 +9,20 @@ using System.Threading.Tasks;
 namespace OPA.OPA_Base.Rules
 {
     /// <summary>
-    ///  Applied SOLID proncipal
+    ///  Applied SOLID principal
     /// </summary>
    public class OPA_RuleExecuter : IOPA_RuleExecuter
     {
+        // Get List of rule
         List<IRule> _rules = new List<IRule>();
-        public OPA_RuleExecuter()
+        public OPA_RuleExecuter(List<IRule> _rules)
         {
-            _rules.Add(new BookRule());
-            _rules.Add(new PhysicalProductRule());
-            _rules.Add(new NewMembershipRule());
-            _rules.Add(new UpgradeMemberShipRule());
-            _rules.Add(new MembershipORUpgradeRule());
-            _rules.Add(new VideoLearningRule());
-            _rules.Add(new PhysicalProductORBookRule());
-
+            foreach (var rule in _rules)
+            {
+                _rules.Add(rule);
+               
+            }
+ 
         }
 
         public string ExecuteRuleByOrder(Order order)

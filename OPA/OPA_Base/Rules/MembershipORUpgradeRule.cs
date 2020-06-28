@@ -14,14 +14,23 @@ namespace OPA.OPA_Base.Rules
 
         private string EmailActivation()
         {
-            //logic comes here
-            MailMessage mail =new MailMessage();
-            mail.Subject = "Membership Activation/Upgrade";
-            mail.Body = "Your Membership Upgraded";
-            mail.To.Add("xyx@gmail.com");
-            SmtpClient smpt = new SmtpClient();
-            smpt.Send(mail);
-            return "Email sent successfully for Activation/Upgrade";
+            try
+            {
+                //logic comes here
+                MailMessage mail = new MailMessage();
+                mail.Subject = "Membership Activation/Upgrade";
+                mail.Body = "Your Membership Upgraded";
+                mail.To.Add("xyx@gmail.com");
+                //SmtpClient smpt = new SmtpClient();
+                //smpt.Send(mail);
+                return "Email sent successfully for Activation/Upgrade";
+            }
+            catch (System.Exception)
+            {
+                //Log exception here
+                throw;
+            }
+           
         }
     }
 }

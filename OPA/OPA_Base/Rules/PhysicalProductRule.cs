@@ -14,8 +14,17 @@ namespace OPA.OPA_Base.Rules
 
         private string GeneratePackagingSlip()
         {
-            //logic comes here
-            return "Generate A Packaging Slip for shipping";
+            try
+            {
+                //logic comes here
+                return "Generate A Packaging Slip for shipping";
+            }
+            catch (System.Exception)
+            {
+                //Log Exception here
+                throw;
+            }
+           
         }
     }
 }

@@ -14,8 +14,17 @@ namespace OPA.OPA_Base.Rules
 
         private string AddFreeVideo()
         {
-            //logic comes here
-            return "First Aid Vedio Added Successfully";
+            try
+            {
+                //logic comes here
+                return "First Aid Vedio Added Successfully";
+            }
+            catch (System.Exception)
+            {
+                //Log Exception here
+                throw;
+            }
+           
         }
     }
 }

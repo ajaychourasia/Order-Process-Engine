@@ -11,7 +11,14 @@ namespace OPA_Launch
         {
             Order order = new Order();
             string returnMessage = string.Empty;
-            Console.WriteLine("Enter Order Type");
+            Console.WriteLine("Enter Order Type for Which Payment Done :\n" +
+                                                      "1 for Physical Product\n" +
+                                                      "2 for Book\n" +
+                                                      "3 for New Membership\n" +
+                                                      "4 for Upgrade MemberShip\n" +
+                                                      "5 for Membership OR Upgrade\n" +
+                                                      "6 For VideoLearning\n" +
+                                                      "7 for Physical Product OR Book\n");
             int orderVal = int.Parse(Console.ReadLine());
             order.OrderType = orderVal;
             switch (orderVal)
