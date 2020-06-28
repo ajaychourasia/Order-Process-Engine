@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPA", "OPA\OPA.csproj", "{E3D5F94B-5813-4539-94E2-9CAD01B2F140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPA_Launch", "OPA_Launch\OPA_Launch.csproj", "{A5FF4BD2-43BB-4F0B-91CF-E6D3FC1DFFEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3D5F94B-5813-4539-94E2-9CAD01B2F140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D5F94B-5813-4539-94E2-9CAD01B2F140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D5F94B-5813-4539-94E2-9CAD01B2F140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D5F94B-5813-4539-94E2-9CAD01B2F140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5FF4BD2-43BB-4F0B-91CF-E6D3FC1DFFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5FF4BD2-43BB-4F0B-91CF-E6D3FC1DFFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5FF4BD2-43BB-4F0B-91CF-E6D3FC1DFFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5FF4BD2-43BB-4F0B-91CF-E6D3FC1DFFEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E2713BB-4C48-42B5-AE75-28FEF5B3CDBC}
+	EndGlobalSection
+EndGlobal
